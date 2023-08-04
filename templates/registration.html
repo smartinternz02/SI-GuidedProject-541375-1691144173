@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNI-ACC Login Page</title>
+    <link rel="stylesheet" href="../static/css/s.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <img src="static\images\th.jpg" alt="Logo" width="300" height="100" />
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li class="dropdown">
+          <div class="dropbtn" id="loginBtn">Login</div>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="">Student</a>
+            <a href="">Faculty</a>
+            <a href="">Admin</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Registration Section -->
+    <section class="login-section hero">
+      <h2>Login</h2>
+      <form action="/login" method="post">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="emailid">Email ID:</label>
+        <input type="text" id="email" name="email" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <label for="roll">Roll:</label>
+            <select name="roll" id="roll" required>
+            <option value="0">Student</option>
+            <option value="1">Faculty</option>
+            <option value="2">Admin</option>
+            </select>
+
+        <input type="submit" value="Sign Up" class="dropbtn" />
+
+        <label for="cars">Choose a car:</label>
+
+
+
+    
+      </form>
+    </section>
+
+    <script src="../static/scripts/script.js"></script>
+  </body>
+</html>
